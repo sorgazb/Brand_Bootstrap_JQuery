@@ -9,10 +9,11 @@
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark"
-      aria-label="First navbar example">
+    <nav class="navbar navbar-expand-md bg-dark sticky-top"
+      aria-label="First navbar example" data-bs-theme="dark">
       <div class="container-xl">
         <a class="navbar-brand" href="#">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
@@ -34,7 +35,7 @@
               <a class="nav-link active" aria-current="page" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Registro</a>
+              <a class="nav-link" href="registro.html">Registro</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Servicios</a>
@@ -75,7 +76,7 @@
     </header>
     <main>
       <div class="container">
-        <div id="carouselExampleCaptions" class="carousel slide mb-5 mt-5" data-bs-ride="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide mt-5" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -113,12 +114,94 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-
-        <div>
-
+        <div class="bg-warning-subtle p-4 rounded mt-5">
+          <p class="display-6 text-center">Informacion importante</p>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                   <strong>Nuestra Misión</strong>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid doloremque expedita libero iste molestias corrupti optio veniam saepe vitae. Enim consequuntur ratione voluptas veniam fugiat dolorum cum temporibus quos unde.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <strong>Servicios</strong>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eius exercitationem quia dignissimos. Temporibus natus vitae rem possimus quae! Molestias placeat odio rem fuga perspiciatis ipsam dolores qui expedita quisquam.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <strong>Contacto</strong>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam laboriosam explicabo quod, ipsum laborum ipsa ut recusandae amet odit neque repellendus ab architecto itaque quam eum sint perferendis debitis dolore.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row mt-5">
+          <div class="col-12 col-md-6 col-lg-4 mt-3">
+            <div class="card">
+              <img src="../Enunciado/img/img-card-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Tarjeta 1</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed alias reprehenderit voluptatum sint eos nemo quas in cum ducimus consequuntur veniam pariatur, aliquam quasi nihil quidem, deleniti, corporis iure doloribus?</p>
+                <a href="#" class="btn btn-primary">Saber mas</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mt-3">
+            <div class="card">
+              <img src="../Enunciado/img/img-card-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Tarjeta 2</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At pariatur iste reiciendis cum quae distinctio quaerat eveniet repudiandae. Omnis quae similique inventore. Dolor exercitationem rem maiores atque necessitatibus minima non!</p>
+                <a href="#" class="btn btn-primary">Saber mas</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mt-3">
+            <div class="card">
+              <img src="../Enunciado/img/img-card-3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Tarjeta 3</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, provident. Id quod perspiciatis incidunt, in corrupti omnis magnam! Ab, labore nemo corrupti quidem architecto aspernatur quam totam cum possimus enim?</p>
+                <a href="#" class="btn btn-primary">Saber mas</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-dark">
+      <div>
+        <span class="m-3 text-white">Sergio Orgaz</span>
+      </div>
+      <div class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <a class="text-light m-3" href="#"><i class="bi bi-facebook"></i></a>
+        <a class="text-light m-3" href="#"><i class="bi bi-twitter-x"></i></a>
+        <a class="text-light m-3" href="#"><i class="bi bi-instagram"></i></a>
+        <a class="text-light m-3" href="#"><i class="bi bi-linkedin"></i></a>
+        <a class="text-light m-3" href="#"><i class="bi bi-github"></i></a>
+      </div>
+    </footer>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
