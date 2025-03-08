@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md bg-dark sticky-top" data-bs-theme="dark" aria-label="Fourth navbar example">
+      <div class="container-lg d-flex justify-content-between">
+        <a class="navbar-brand" href="#">
+          <i class="bi bi-house-fill"></i>
+          <span>Brand</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExample04">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="registro.html">Registro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Recursos</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Documentación</a></li>
+                <li><a class="dropdown-item" href="#">Tutoriales</a></li>
+                <li><a class="dropdown-item" href="#">Soporte</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="container-lg mt-5 p-4 shadow">
+      <p class="bg-success text-white text-center p-3 display-6">Formulario de Registro</p>
+      <form>
+        <div class="row g-3">
+
+          <div class="col-md-6">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="inputNombre" placeholder="Nombre" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ingresa tu nombre"/>
+              <label for="inputNombre">Nombre</label>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="inputApellido" placeholder="Nombre" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ingresa tus apellidos"/>
+              <label for="inputApellido">Apellidos</label>
+            </div>
+          </div>
+          
+          <div class="col-md-6">
+            <div class="form-floating">
+              <input type="email" class="form-control" id="inputCorreoElectronico" placeholder="Correo Electronico" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ingresa tu correo electrónico"/>
+              <label for="inputCorreoElectronico">Correo Electronico</label>
+            </div>
+          </div>
+          
+          <div class="col-md-6">
+            <div class="form">
+              <select class="form-select py-3" aria-label="Default select example" id="inputTipoUsuario" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ingresa el tipo de usuario">
+                <option selected value="0">Seleccione Tipo de Usuario</option>
+                <option value="individual" class="m-1">Individual</option>
+                <option value="empresa" class="m-1">Empresa</option>
+                <option value="coorporativo" class="m-1">Coorporativo</option>
+              </select>
+            </div>
+          </div>
+        
+          <div class="col-md-6">
+            <div class="form">
+              <input list="comunidades" id="inputComunidad" name="comunidad" class="form-control" placeholder="Comunidad Autónoma" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Indica la CCAA donde vives"/>
+              <datalist id="comunidades">
+                <option value="Andalucía"></option>
+                <option value="Aragón"></option>
+                <option value="Asturias"></option>
+                <option value="Islas Baleares"></option>
+                <option value="Canarias"></option>
+                <option value="Cantabria"></option>
+                <option value="Castilla y León"></option>
+                <option value="Castilla-La Mancha"></option>
+                <option value="Cataluña"></option>
+                <option value="Extremadura"></option>
+                <option value="Galicia"></option>
+                <option value="Madrid"></option>
+                <option value="Murcia"></option>
+                <option value="Navarra"></option>
+                <option value="La Rioja"></option>
+                <option value="País Vasco"></option>
+                <option value="Comunidad Valenciana"></option>
+                <option value="Ceuta"></option>
+                <option value="Melilla"></option>
+              </datalist>
+            </div>
+          </div>
+          
+          <div class="col-md-6">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Código de referido" aria-label="Recipient's username" id="inputReferido" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ingresa el codigo de referido si tienes uno"/>
+              <button class="btn btn-outline-secondary" type="button" id="btnAplicar">Aplicar</button>
+            </div>
+          </div>
+          
+          <div class="col-sm-4">
+            <div class="d-flex justify-content-between">
+              <div>
+                <span>Intereses</span>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value id="tecnologia"/>
+                  <label class="form-check-label" for="tecnologia">Tecnologia</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value id="negocios"/>
+                  <label class="form-check-label" for="negocios">Negocios</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value id="disenio"/>
+                  <label class="form-check-label" for="disenio">Diseño</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-4">
+            <span>Plan de Suscripción</span>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="planBasico"/>
+              <label class="form-check-label" for="planBasico">
+                Plan básico
+                <i class="bi bi-info-circle" id="radioPlanBasico" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Plan gratuito con funciones básicas"></i>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="planPremium"/>
+              <label class="form-check-label" for="planPremium">
+                Plan premium
+                <i class="bi bi-info-circle" id="radioPlanPremium" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Plan con todas las funciones desbloqueadas"></i>
+              </label>
+            </div>
+          </div>
+          
+          <div class="col-sm-4">
+            <div class="mb-3 d-flex justify-content-evenly">
+              <label for="inputColor" class="form-label me-2">Tema:</label>
+              <input type="color" class="form-control form-control-color" id="inputColor" value="#000000" title="Choose your color"/>
+              <p class="ms-2"><strong></strong></p>
+            </div>
+          </div>
+
+          <div class="col-lg-12 text-center">
+            <button id="btnRegistro" class="btn btn-primary ps-4 pe-4 pt-2 pb-2">
+              Registrate
+            </button>
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+    <div id="toast-container" class="position-absolute mt-5 top-0 end-0 p-3">
+      <div id="toast" class="toast align-items-center bg-danger" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+          <div id="textoToast" class="toast-body text-white"></div>
+          <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalRegistro" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modal-title">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const inputNombre = document.getElementById("inputNombre");
+      const tooltip = new bootstrap.Tooltip(inputNombre, {
+        inputNombre: document.body,
+      });
+    
+      const inputApellido = document.getElementById("inputApellido");
+      const tooltip2 = new bootstrap.Tooltip(inputApellido, {
+        inputApellido: document.body,
+      });
+    
+      const inputCorreoElectronico = document.getElementById(
+        "inputCorreoElectronico"
+      );
+      const tooltip3 = new bootstrap.Tooltip(inputCorreoElectronico, {
+        inputCorreoElectronico: document.body,
+      });
+    
+      const inputTipoUsuario = document.getElementById("inputTipoUsuario");
+      const tooltip4 = new bootstrap.Tooltip(inputTipoUsuario, {
+        inputTipoUsuario: document.body,
+      });
+    
+      const inputComunidad = document.getElementById("inputComunidad");
+      const tooltip5 = new bootstrap.Tooltip(inputComunidad, {
+        inputComunidad: document.body,
+      });
+    
+      const inputReferido = document.getElementById("inputReferido");
+      const tooltip6 = new bootstrap.Tooltip(inputReferido, {
+        inputReferido: document.body,
+      });
+    
+      const radioPlanBasico = document.getElementById("radioPlanBasico");
+      const tooltip7 = new bootstrap.Tooltip(radioPlanBasico, {
+        radioPlanBasico: document.body,
+      });
+    
+      const radioPlanPremium = document.getElementById("radioPlanPremium");
+      const tooltip8 = new bootstrap.Tooltip(radioPlanPremium, {
+        radioPlanPremium: document.body,
+      });
+    
+      $(document).ready(function () {
+        $("p strong")
+          .text($("#inputColor").val())
+          .css("color", $("#inputColor").val());
+    
+        $("#inputColor").on("input", function () {
+          var nuevoColor = $(this).val();
+          $("p strong").text(nuevoColor).css("color", nuevoColor);
+        });
+    
+        $("#btnAplicar").on("click", function (e) {
+          e.preventDefault();
+          if ($("#inputReferido").val() == "") {
+            if($('#toast').hasClass('bg-success')){
+              $('#toast').removeClass('bg-success')
+              $('#toast').addClass('bg-danger')
+            }
+            $('#textoToast').text('No has aplicado el codigo de referido')
+            $("#toast").toast("show");
+          } else {
+            $.ajax({
+              url: "./json/codigos.json",
+              type: "GET",
+              dataType: "json",
+              success: function (data) {
+                let codigo = ""
+                let valor = ""
+                for (let index = 0; index < data.length; index++) {
+                  if(data[index].codigo == $('#inputReferido').val()){
+                    codigo = data[index].codigo
+                    valor = data[index].descuento
+                  }
+                }
+                if(codigo == ''){
+                  if($('#toast').hasClass('bg-success')){
+                    $('#toast').removeClass('bg-success')
+                    $('#toast').addClass('bg-danger')
+                  }
+                  $('#textoToast').text('El codigo de referido introducido no es valido')
+                  $("#toast").toast("show");
+                }else{
+                  $('#toast').removeClass('bg-danger')
+                  $('#toast').addClass('bg-success')
+                  $('#textoToast').text('Descuento aplicado correctamente')
+                  $("#toast").toast("show");
+    
+                  $('#inputReferido').prop('disabled', true);
+                  $('#btnAplicar').text('Aplicado');
+                  $('#btnAplicar').prop('disabled', true);
+    
+                if ($("#alertaDescuento").length == 0) {
+                  $(".col-lg-12.text-center").after(`
+                    <div id="alertaDescuento" class="alert alert-success mt-3" role="alert">
+                      Tu descuento es : ${valor}
+                    </div>
+                  `);
+                }
+                }
+              },
+              error: function (jqXHR, textStatus, errorThrown) {
+                if($('#toast').hasClass('bg-success')){
+                    $('#toast').removeClass('bg-success')
+                    $('#toast').addClass('bg-danger')
+                  }
+                  $('#textoToast').text('Se ha producido un error a la hora de aplicar el codigo')
+                  $("#toast").toast("show");
+              },
+            });
+          }
+        });
+    
+        $("#inputNombre").on("focus", function () {
+          $("#inputNombre").removeClass('bg-danger bg-opacity-25')
+        });
+    
+        $("#inputApellido").on("focus", function () {
+          $("#inputApellido").removeClass('bg-danger bg-opacity-25')
+        });
+    
+        $("#inputCorreoElectronico").on("focus", function () {
+          $("#inputCorreoElectronico").removeClass('bg-danger bg-opacity-25')
+        });
+    
+        $("#inputTipoUsuario").on("focus", function () {
+          $("#inputTipoUsuario").removeClass('bg-danger bg-opacity-25')
+        });
+    
+        $("#inputComunidad").on("focus", function () {
+          $("#inputComunidad").removeClass('bg-danger bg-opacity-25')
+        });
+    
+    
+        $("#btnRegistro").on("click", function (e) {
+          e.preventDefault();
+          let formularioValido = true
+    
+          if ($("#inputNombre").val() == "") {
+            formularioValido = false
+            $("#inputNombre").addClass('bg-danger bg-opacity-25')
+          }if($("#inputApellido").val() == ""){
+            formularioValido = false
+            $("#inputApellido").addClass('bg-danger bg-opacity-25')
+          }if($("#inputCorreoElectronico").val() == ""){
+            formularioValido = false
+            $("#inputCorreoElectronico").addClass('bg-danger bg-opacity-25')
+          }if($("#inputTipoUsuario").val() == "0"){
+            formularioValido = false
+            $("#inputTipoUsuario").addClass('bg-danger bg-opacity-25')
+          }if($("#inputComunidad").val() == ""){
+            formularioValido = false
+            $("#inputComunidad").addClass('bg-danger bg-opacity-25')
+          }
+    
+          if(!formularioValido){
+            if($('#toast').hasClass('bg-success')){
+                    $('#toast').removeClass('bg-success')
+                    $('#toast').addClass('bg-danger')
+            }
+            $('#textoToast').text('Debes rellenar los campos vacios')
+            $("#toast").toast("show");
+          }     
+          else {
+            const planSeleccionado = $('input[name="flexRadioDefault"]:checked').val();
+            if (!planSeleccionado) {
+              formularioValido = false;
+              if ($('#toast').hasClass('bg-success')) {
+                $('#toast').removeClass('bg-success');
+                $('#toast').addClass('bg-danger');
+              }
+              $('#textoToast').text('Debes seleccionar un plan de suscripción');
+              $("#toast").toast("show")
+            }
+            else{
+              $.ajax({
+              url: "./json/registro.json",
+              type: "GET",
+              dataType: "json",
+              success: function (data) {
+                if(data.error === 0){
+                  $("#modal-title").html("Registro completado");
+                  $(".modal-body").html("El registro se ha completado correctamente");
+                  $("#modalRegistro").modal("show");
+                }else {
+                    $("#modal-title").html("Error en el registro");
+                    $(".modal-body").html(data.error_msg);
+                    $("#modalRegistro").modal("show");
+                  }
+              },
+              error: function (jqXHR, textStatus, errorThrown) {
+                $("#modal-title").html("Error en el registro");
+                $(".modal-body").html("Error a la hora de realizar el registro");
+                $("#modalRegistro").modal("show");
+              },
+            });
+            }
+          }
+        });
+      });
+    </script>
+
+  </body>
+</html>
